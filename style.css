@@ -1,73 +1,27 @@
-.responsive {
+.columns {
+	max-height: 800px;
+}
+.scrollable {
+	height: 100%;
+	position: relative;
+}
+
+.scrollable > div {
+	position: absolute;
+	height: 100%;
 	width: 100%;
-	height: auto;
+	left: 0;
+	top: 0;
+	overflow-y: auto;
 }
 
-#inputsm {
-	display: inline-block;
-	width: 85%;
+.outerdiv {
+	height: 600px;
+	display: flex;
+	flex-direction: column;
 }
 
-#scard {
-	display: inline-block;
-	width: 10%;
-	height: 10%;
-}
-div {
-	margin: auto;
-}
-
-#cardlistdiv {
-	border: groove red;
-	height: 500px;
-	overflow-y: scroll;
-}
-
-#cardlist {
-	list-style-type: none;
-	padding-left: 0px;
-}
-
-#cardlist li:hover {
-	background-color: yellow;
-}
-
-#cardinfo {
-	border: groove blue;
-	height: 500px;
-	overflow-y: scroll;
-}
-
-#cardimagediv {
-	border: groove yellow;
-	height: 500px;
-	text-align: center;
-}
-
-#cardinfo ul {
-	padding-left: 0px;
-}
-
-#cardinfo li {
-	list-style-type: none;
-	padding-left: 0px;
-}
-
-#cardname:before {
-	content: 'Card Name: ';
-	font-weight: bold;
-}
-
-#cardtype:before {
-	content: 'Card Type: ';
-	font-weight: bold;
-}
-
-#cardtext:before {
-	content: 'Card Text: ';
-	font-weight: bold;
-}
-
-#cardimage {
-	max-width: 300px;
+.innerdiv {
+	flex: 1; /* take available space */
+	overflow: auto;
 }
