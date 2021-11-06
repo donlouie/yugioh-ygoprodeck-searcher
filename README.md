@@ -26,16 +26,7 @@ To get a local copy up and running follow these simple example steps. -->
 
 ### 📝️Prerequisites
 
-<!-- This is an example of how to list things you need to use the software and how to install them. -->
-
-<!-- - npm
-  ```sh
-  npm install npm@latest -g -->
-
-```
-
 ### 🛠️ Installation
-
 
 <!-- LICENSE -->
 
@@ -50,4 +41,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com -->
 
 <!-- Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name) -->
+
+```
+
 ```
