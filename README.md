@@ -8,7 +8,7 @@ Yu-Gi-Oh! card search engine using fetch api and YGOPRODECK api.
 
 ### 🖼️ Image Preview
 
-![Imgur](https://i.imgur.com/3xd5MyZ.png)
+![Imgur](https://i.imgur.com/ZBg7dQ4.png)
 
 ### 🏗️ Built With
 
@@ -27,6 +27,12 @@ To get a local copy up and running follow these simple example steps. -->
 ### 📝️Prerequisites
 
 ### 🛠️ Installation
+
+Download or create your own copy and run the index.html
+
+```
+git clone
+```
 
 <!-- LICENSE -->
 

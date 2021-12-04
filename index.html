@@ -4,13 +4,13 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Yu-Gi-Oh Searcher</title>
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="/style.css" />
 		<!-- Bulma CSS CDN -->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
 		/>
-		<!-- Style CSS -->
-		<link rel="stylesheet" href="/style.css" />
 		<!-- Font Awesome CDN -->
 		<link
 			rel="stylesheet"
@@ -18,82 +18,105 @@
 			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
 			crossorigin="anonymous"
 		/>
+		<!-- Google Fonts -->
 	</head>
 	<body>
 		<!-- Title & Description -->
 		<section class="section">
 			<div class="container">
-				<div class="container is-fluid notification is-warning">
+				<div id="title" class="container notification">
 					<h1 class="title">Yu-Gi-Oh Searcher</h1>
 					<p class="subtitle">
 						Yu-Gi-Oh! Card Search Engine using YGOPRODECK API
 					</p>
 				</div>
 			</div>
-		</section>
-		<!-- Search Input Form & Button -->
-		<section>
-			<div class="container">
-				<div class="container is-fluid notification is-dark p-5">
-					<div class="field has-addons">
-						<div
-							class="
-								control
-								has-icons-left has-icons-right
-								is-expanded
-							"
-						>
-							<input
-								type="text"
-								id="card-name"
-								name="card-name"
-								class="input is-dark is-large"
-								placeholder="Enter words to search"
-							/>
-							<span class="icon is-medium is-left">
-								<i class="fas fa-search"></i>
-							</span>
-						</div>
-						<p class="control">
-							<a class="button is-warning is-large" id="scard"
-								>SEARCH</a
-							>
-						</p>
+			<!-- Search Input Form & Button -->
+			<div id="search" class="container notification p-5">
+				<div class="field has-addons">
+					<div
+						class="
+							control
+							has-icons-left has-icons-right
+							is-expanded
+						"
+					>
+						<input
+							type="text"
+							id="card-name"
+							name="card-name"
+							class="input is-dark is-large"
+							placeholder="Enter words to search"
+						/>
+						<span class="icon is-medium is-left">
+							<i class="fas fa-search"></i>
+						</span>
 					</div>
+					<p class="control">
+						<a class="button is-dark is-large" id="scard"
+							><i class="fas fa-search"></i
+						></a>
+					</p>
 				</div>
 			</div>
-		</section>
-		<!-- Card Information -->
-		<section class="section">
-			<div class="container is-mobile" style="height: 500px">
+			<!-- Card Information -->
+
+			<div class="container is-mobile" style="height: 900px">
 				<div class="container is-fluid">
 					<div class="columns card">
-						<div class="column" id="cardlistdiv">
+						<div class="column card" id="cardlistdiv">
+							<header class="card-header">
+								<p class="card-header-title">
+									<i class="fas fa-list"></i>&nbspSearch List
+								</p>
+							</header>
 							<div class="outerdiv">
 								<div class="innerdiv">
 									<div class="scrollable">
 										<!-- Card List -->
-										<ul id="cardlist"></ul>
+										<div class="card-content">
+											<ul id="cardlist"></ul>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="column card" id="cardinfo">
+							<header class="card-header">
+								<p class="card-header-title">
+									<i class="fas fa-info"></i>&nbspCard Info
+								</p>
+							</header>
 							<ul>
 								<!-- Card Info -->
-								<li id="cardname"></li>
-								<li id="cardtype"></li>
-								<li id="cardtext"></li>
+								<div class="card-content">
+									<li id="cardname" class="title is-2"></li>
+									<li
+										id="cardtype"
+										class="subtitle is-4"
+									></li>
+									<li
+										id="cardtext"
+										class="subtitle is-5"
+									></li>
+								</div>
 							</ul>
 						</div>
-						<div class="column" id="cardimagediv">
+						<div class="column card" id="cardimagediv">
+							<header class="card-header">
+								<p class="card-header-title">
+									<i class="far fa-images"></i>&nbspImage
+									Preview
+								</p>
+							</header>
 							<div class="card-image">
-								<!-- Card Image -->
-								<img
-									class="card"
-									src="https://vignette.wikia.nocookie.net/yugioh/images/e/e5/Back-EN.png/revision/latest/scale-to-width-down/500?cb=20100726082133"
-									id="cardimage"
-								/>
+								<div class="card-content">
+									<!-- Card Image -->
+									<img
+										src="https://vignette.wikia.nocookie.net/yugioh/images/e/e5/Back-EN.png/revision/latest/scale-to-width-down/500?cb=20100726082133"
+										id="cardimage"
+									/>
+								</div>
 							</div>
 						</div>
 					</div>
