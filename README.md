@@ -4,7 +4,7 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-Yu-Gi-Oh! card search engine using fetch api and YGOPRODECK api.
+Yu-Gi-Oh! card searcher using ygoprodeck api
 
 ### 🖼️ Image Preview
 
